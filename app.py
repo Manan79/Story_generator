@@ -5,11 +5,11 @@ import google.generativeai as genai
 genai.configure(api_key="AIzaSyBfbJqduIbFJWledG9IK60X45exlexJMM0")
 model = genai.GenerativeModel("gemini-1.5-flash-latest  ")
 
-# --- Initialize session state ---
-if "story" not in st.session_state:
-    st.session_state.story = "Once upon a time in a small Indian village..."
-if "choices" not in st.session_state:
-    st.session_state.choices = ["Talk to the village elder", "Explore the sacred forest"]
+# # --- Initialize session state ---
+# if "story" not in st.session_state:
+#     st.session_state.story = "Once upon a time in a small Indian village..."
+# if "choices" not in st.session_state:
+#     st.session_state.choices = ["Talk to the village elder", "Explore the sacred forest"]
 
 # --- Display current story ---
 st.title("🌍 Cultural Story Generator")
